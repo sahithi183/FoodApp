@@ -1,0 +1,168 @@
+
+p{
+	font-family: sans-serif;
+	text-align: center;
+}
+ul{
+	list-style: none;
+	display: inline-block;
+}
+
+li{
+	display: inline-block;
+	color:gray;
+}
+.jb{
+	padding-top: 20px;
+}
+.smedia{
+	list-style: none;
+	margin: 3px 3px;
+	padding: 5px 5px;
+	display: inline-block;
+	font-size: 15px;
+	color: black;
+	border: 1px solid black;
+	border-radius: 30%;
+}
+li:hover{
+	color: #292929;
+}
+.smedia:hover{
+	color: #292929;
+	border: 1px solid #292929;
+}
+a{
+	color: black;
+	line-height: 0;
+}
+.bar1{
+	text-align: right;
+	font-size: 15px;
+	background-color: white;
+}
+.youtube{
+	background-color: #ffb366;
+}
+
+.bgmodal{
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.7);
+	position: absolute;
+	top: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	display: none;
+}
+.modal-content{
+	width: 500px;
+	height: 300px;
+	padding: 20px;
+	text-align: center;
+	position: relative;
+	background-color: white;
+	border-radius: 5px;
+}
+.button{
+	border: 1px solid gray;
+	border-radius: 5px;
+	background-color: white;
+	text-decoration: none;
+	padding: 10px 10px;
+	color: gray;
+	margin-top: 10px;
+	display: inline-block;
+	&:hover {
+		color: #292929;
+		border: 1px solid #292929;
+	}
+}
+input {
+	margin: 20px auto;
+	display: block;
+	width: 50%;
+	padding: 8px;
+	border: 1px solid gray;
+}
+
+.close {
+	position: absolute;
+	top: 0;
+	right: 10px;
+	font-size: 30px;
+	color: #333;
+	transform: rotate(45deg);
+	cursor: pointer;
+	padding-top: 14px;
+	text-decoration: none;
+	&:hover {
+		color: #666;
+	}
+}
+.button1{
+	background-color: #87CEEB;
+	border: 2px solid white;
+	border-radius: 30px;
+	text-decoration: none;
+	padding: 12px 20px;
+	color: white;
+	margin-top: 10px;
+	display: inline-block;
+	&:hover {
+		background-color: white;
+		color: #87CEEB;
+		border: 2px solid #87CEEB;
+	}
+}
+.img1{
+	padding-bottom: 20px;
+	padding-right: 30px;
+
+}
+
+
+footer{
+	background-color: #D3D3D3;
+}
+.fhead{
+	display: block;
+
+}
+.fhead1{
+	display:block;
+	color: black;
+}
+.fcontent{
+	display: block;
+	color: #808080;
+	font-family: cursive; 
+	padding-bottom: 5px;
+	cursor:pointer;
+}
+nav {
+            -webkit-flex: 1;
+            -ms-flex:1;
+            flex:1;
+            padding: 20px;
+        }
+nav li{
+	list-style: none;
+    padding: 5px;
+    display: block;
+}
+article{
+	padding: 20px;
+    -webkit-flex: 3;
+    -ms-flex:3;
+    flex:3;
+    height: 120px;
+}          
+section{
+    display:-webkit-flex;
+    display:flex;
+}
+.logo{
+	border-radius: 30%
+}

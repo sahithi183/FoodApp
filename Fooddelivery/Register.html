@@ -1,0 +1,70 @@
+
+<html>
+    <head>
+        <title>Register</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="css/global.css">
+    </head>
+    <body>
+        <h3 style="color:red" id="error"></h3>
+        <section class="container-fluid bg">
+            <section class="row justify-content-center">
+                <section class="col-12 col-sm-6 col-md-3">
+                    <form class="form-container" action="insert.php" method="POST">
+                        
+                        <div class="form-group">
+                            <label for="exampleInputEmail">Username</label>
+                            <input type="text" name="username" class="form-control" id="exampleInputEmail" aria-describedby="emailHelp" required>
+                          </div>
+                        <div class="form-group">
+                          <label for="exampleInputPassword1">Password</label>
+                          <input type="password" name="Password" class="form-control" id="exampleInputPassword1" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword2">ConfirmPassword</label>
+                            <input type="password" name="ConfirmPassword"class="form-control" id="exampleInputPassword2" required>
+                          </div>
+                          <div class="form-group">
+                            <label for="exampleInputEmail1">Email</label>
+                            <input type="Email" name="email"<"class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
+                            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                          </div>
+                        <div class="form-group form-check">
+                          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                          <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary" onclick="validate();">Submit</button>
+                        
+                      </form>
+                </section>
+            </section>
+
+        </section>
+        <script >
+            function validate()
+            {
+                var name = document.getElementById('exampleInputEmail').value;
+                var password = document.getElementById('exampleInputPassword1').value;
+                var ConfirmPassword = document.getElementById('exampleInputPassword2').value;
+                let email = document.getElementById('exampleInputEmail1').value;
+                
+                if (name==null || name==""){  
+                  alert("Name can't be blank");  
+                  return false;  
+                }
+                 if(password.length<8){  
+                  alert("Password must be at least 8 characters long.");  
+                  return false;  
+                  }
+                 if(password != ConfirmPassword){
+                    alert("Password and confirm password doesnot match");  
+                  return false;  
+                  }  
+                }  
+            </script>
+            
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    </body>
+</html>
